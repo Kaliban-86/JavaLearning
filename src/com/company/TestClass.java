@@ -2,6 +2,13 @@ package com.company;
 
 public class TestClass {
     int age;
+    boolean bool;
+    char ch;
+    float fl;
+    double db;
+    byte bt;
+    long lng;
+
     String name;
 
     public TestClass(int age, String name) {
