@@ -8,6 +8,12 @@ public class SettersAndGetters {
         car1.setName("Ласточка");
         car1.showCarParam(car1.getName(), car1.getModel());
 
+        Car car2 = new Car();
+        car2.setModel(125);
+        car2.setName("Волна");
+        car2.showCarParam(car2.getName(), car2.getModel());
+
+
     }
 }
 
@@ -15,10 +21,10 @@ class Car {
     private int model;
     private String name;
 
-    void setModel(int modelNumber) {
+    void setModel(int model) {
 
-        if (modelNumber > 0) {
-            model = modelNumber;
+        if (model > 0) {
+            this.model = model;
         } else System.out.println("Некорректный номер модели!!!!");
 
     }
@@ -27,10 +33,10 @@ class Car {
         return model;
     }
 
-    void setName(String modelName) {
-        if (modelName.isEmpty()) {
+    void setName(String name) {
+        if (name.isEmpty()) {
             System.out.println("Некорректное название модели!!!");
-        } else name = modelName;
+        } else this.name = name;
     }
 
     String getName() {
