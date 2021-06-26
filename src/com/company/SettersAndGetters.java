@@ -4,7 +4,7 @@ public class SettersAndGetters {
     public static void main(String[] args) {
 
         Car car1 = new Car();
-        car1.setModel(125);
+        car1.setModel(-125);
         car1.setName("Ласточка");
         car1.showCarParam(car1.getName(), car1.getModel());
 
