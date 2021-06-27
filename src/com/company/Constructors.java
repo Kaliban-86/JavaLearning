@@ -3,7 +3,7 @@ package com.company;
 public class Constructors {
     public static void main(String[] args) {
 
-        Man vadim = new Man( 35);
+        Man vadim = new Man(35);
     }
 }
 
@@ -30,5 +30,4 @@ class Man {
         this.age = age;
         System.out.println("привет из четветрого конструктора");
     }
-
 }
