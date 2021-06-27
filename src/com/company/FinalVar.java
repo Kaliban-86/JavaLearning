@@ -5,7 +5,7 @@ public class FinalVar {
 
     public static void main(String[] args) {
         final  int AGE = 30;
-        AGE = 35; // Не можем менять!!!!!
+       // AGE = 35; // Не можем менять!!!!!
     }
 }
 class TestFinal{
