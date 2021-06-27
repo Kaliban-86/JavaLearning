@@ -23,6 +23,6 @@ class TestingStatic {
     }
 
     public static void testMethod(int staticValue) {
-        System.out.println("Пример статического метода и статической перемнной: " + staticValue);
+        System.out.println("Пример статического метода и статической переменной: " + staticValue);
     }
 }
