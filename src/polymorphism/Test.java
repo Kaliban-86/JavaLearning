@@ -5,8 +5,13 @@ import com.company.TestClass; // импорт класса из другого �
 public class Test {
     public static void main(String[] args) {
         Animal animal = new Animal();
-        Animal animal1 = new Dog();
+        Animal animal1 = new Dog(); // Восходящее преобразование
         Animal animal2 = new Cat();
+
+        Dog dog1 = (Dog) animal1; // Нисходящее преобразование
+
+
+
 
        TestClass ts = new TestClass(12,"dfdf"); // демонстрация импорта из другого пакета
 
@@ -25,6 +30,9 @@ public class Test {
 
         run(dog);
         run(cat);
+
+
+
 
     }
 
