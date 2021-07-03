@@ -13,7 +13,7 @@ public class Test {
         animal1.eat();
         animal2.eat();
 
-        MayBark mayBark = new MayBark() {
+        MayBark mayBark = new MayBark() { // вот здесь реализован анонимный класс для реализации метода интерфейса
             @Override
             public void bark() {
                 System.out.println("Гав гав...");
