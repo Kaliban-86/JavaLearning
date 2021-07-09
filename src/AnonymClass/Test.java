@@ -4,7 +4,7 @@ public class Test {
     public static void main(String[] args) {
         Animal animal1 = new Animal() {   //  вот здесь в коде фактически и создается анонимный класс дочерний от класса Animal
             void eat() {
-                System.out.println("Animal1 is eating...");
+                System.out.println("SomeAnimal1 is eating...");
             }
         };
 
