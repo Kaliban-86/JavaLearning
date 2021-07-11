@@ -10,7 +10,7 @@ public class WrihtFileTest {
         File file = new File("SomeFile");
         PrintWriter printWriter = new PrintWriter(file);
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 7; i++) {
             printWriter.println("Hellow number " + (x + i));
         }
         printWriter.close(); // обязательно нужно закрывать!!!!
