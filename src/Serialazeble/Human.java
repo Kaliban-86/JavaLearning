@@ -3,7 +3,7 @@ package Serialazeble;
 import java.io.Serializable;
 
 public class Human implements Serializable {
-    private transient int age;
+    private int age;
     private String name;
 
     Human(String name, int age) {

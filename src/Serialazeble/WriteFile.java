@@ -8,9 +8,9 @@ import java.io.ObjectOutputStream;
 public class WriteFile {
 
     public static void main(String[] args) {
-        Human human1 = new Human("Bob", 35);
-        Human human2 = new Human("Tom", 37);
-        Human[] people = {new Human("Den", 15), new Human("Mot", 27), new
+        Human human1 = new Human("Bob", 15);
+        Human human2 = new Human("Tom", 27);
+        Human[] people = {new Human("Den", 15), new Human("Mot", 17), new
                 Human("Nina", 32)};
 
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("writeAndRead.bin"))) {
