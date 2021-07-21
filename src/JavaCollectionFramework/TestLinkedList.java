@@ -18,15 +18,11 @@ public class TestLinkedList {
         for (int i = 0; i < 100000; i++) {
             list.add(i);
         }
-
         Long start = System.currentTimeMillis();
-
         for (int i = 0; i < 100000; i++) {
             list.get(i);
         }
-
         Long and = System.currentTimeMillis();
-
         System.out.println(and - start);
     }
 }
