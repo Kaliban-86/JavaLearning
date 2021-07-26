@@ -20,9 +20,9 @@ public class TestLinkedMapAndTreeMap {
     }
 
     public static void testMaps (Map<Integer,String> map){
-        map.put(1,"Bob");
         map.put(15,"Tom");
         map.put(100,"Sam");
+        map.put(1,"Bob");
         map.put(31,"Barbara");
         map.put(7,"Samra");
         map.put(0,"Tamara");
