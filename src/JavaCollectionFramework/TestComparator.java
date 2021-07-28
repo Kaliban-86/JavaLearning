@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class TestComparator {
-    public static <stringComparator> void main(String[] args) {
+    public static  void main(String[] args) {
         List<String> animals = new ArrayList<>();
         animals.add("Dog");
         animals.add("Frog");
@@ -54,7 +54,7 @@ public class TestComparator {
         System.out.println(numbers); // после сортировки нормальным порядком
 
 
-        Collections.sort(numbers, (o1, o2) -> { //после сортровки от большего к меньшему (синтаксис с использованием лямбда выражения)
+        Collections.sort(numbers, (o1, o2) -> { //после сортировки от большего к меньшему (синтаксис с использованием лямбда выражения)
             if (o1 > o2) {
                 return -1;
             } else if (o1 < o2) {
