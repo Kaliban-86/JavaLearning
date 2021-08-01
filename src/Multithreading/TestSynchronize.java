@@ -36,7 +36,7 @@ public class TestSynchronize {
         System.out.println(count);
     }
 
-    public synchronized void incrementCount() { //  вот здесь, на этом методе и происходит синхронизация
+    public synchronized void incrementCount() { //  synchronized -  дает возможность использовать тело метода в один момент времени только одому потоку
         count++;
     }
 }
