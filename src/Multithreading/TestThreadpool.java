@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TestThreadpool {
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        ExecutorService executorService = Executors.newFixedThreadPool(2); // это и есть ThreadPool
 
         for (int i = 0; i < 10; i++) {
             executorService.submit(new Work(i)); // передача потокам threadPool заданий
