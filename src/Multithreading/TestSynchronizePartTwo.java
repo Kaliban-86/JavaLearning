@@ -51,12 +51,7 @@ class Worker {
     public void main() {
         long after = System.currentTimeMillis();
 
-        Thread thread1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                work();
-            }
-        });
+        Thread thread1 = new Thread(() -> work());
 
         Thread thread2 = new Thread(new Runnable() {
             @Override

@@ -17,12 +17,13 @@ public class ClassesAndObjects {
         System.out.println("До пенсии осталось " + person2.calculateAgeTo(person2.age));
 
         Person person3 = new Person();
-        person3.setNameAndage(6,"Русланчик");
+        person3.setNameAndage(6, "Русланчик");
         person3.speak();
 
         // System.out.println("Привет, меня зовут " + person1.name + " и мне " + person1.age + " лет!");
         //System.out.println("Привет, меня зовут " + person2.name + " и мне " + person2.age + " лет!");
-
+        new Person().setNameAndage(35, "Vadim");
+        new Person().speak();
     }
 }
 
