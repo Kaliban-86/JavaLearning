@@ -55,8 +55,9 @@ public class TestProducerConsumer {
 
         while (true) {
             Thread.sleep(1000);
+            System.out.println(queue);
             System.out.println(queue.take()); // специальный метод ориентированый под многопоточность, ждет пока появится объект в очереди
-            System.out.println("Queue sizi - " + queue.size());
+            System.out.println("Queue size - " + queue.size());
         }
     }
 }
