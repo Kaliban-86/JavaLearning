@@ -34,7 +34,7 @@ public class TestWaitAndNotify {
 }
 
 class WaitAndNotify{
-
+            long time = 2000;
     public void waitTest(){
         synchronized (this){
         System.out.println("Место в коде до запуска метода wait()");
@@ -55,7 +55,8 @@ class WaitAndNotify{
             scanner.nextLine();
             notify();
             System.out.println("Метсо в коде после запуска метода notify");
-            Thread.sleep(2000);
+            System.out.println("Ожидание " + time + " миллисекунд");
+            Thread.sleep(time);
         }
     }
 }
