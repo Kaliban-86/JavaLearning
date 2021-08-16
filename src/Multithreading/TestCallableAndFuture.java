@@ -8,17 +8,17 @@ public class TestCallableAndFuture {
         ExecutorService executorService = Executors.newFixedThreadPool(1);
 
         Future<Integer> future = executorService.submit(new Callable<Integer>() { // создаем объект класса future  для возвращения значения
-                                                                                // и передаем не Runnable  а Callable, параметризованный.
+            // и передаем не Runnable  а Callable, параметризованный.
             @Override
             public Integer call() throws Exception {
                 Random random = new Random();
 
                 int value = random.nextInt(100);
 
-                if(value>10){
+                if (value > 10) {
                     throw new Exception("Something bad!!!!");
                 }
-                return value;
+                return random.nextInt(100);
             }
         });
 
@@ -32,7 +32,6 @@ public class TestCallableAndFuture {
         } catch (ExecutionException e) {
             Throwable throwable = e.getCause();
             System.out.println(throwable.getMessage());
-            e.printStackTrace();
         }
     }
 }
