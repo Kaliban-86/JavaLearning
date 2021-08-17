@@ -11,6 +11,8 @@ public class TestPatterAndMancher {
         // создаем объект класса pattern с помощью статичного метода (фактори паттер) и передаем регулярное выражение
         Pattern patternMail = Pattern.compile("(\\w+)@(mail|rambler)\\.(ru|com)");
 
+        Pattern  pattern2 = Pattern.compile(" m(\\w+)r"); //  вот так мы можем найти слово mother
+
         // создаем объект класса matcher  и применяем метод  matcher, которому передаем нашу строку
         Matcher matcher = patternMail.matcher(string1);
 
