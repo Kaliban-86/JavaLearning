@@ -1,11 +1,11 @@
 package Reflection;
 
-@SomeAnnot
-public class SomeClass {
-    @SomeAnnot long x;
-    @SomeAnnot String name;
 
-    @SomeAnnot
+public class SomeClass {
+     long x = 5;
+     String name;
+
+
     public long getX() {
         return x;
     }
@@ -22,4 +22,11 @@ public class SomeClass {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "SomeClass{" +
+                "x=" + x +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
